@@ -99,7 +99,7 @@ function spawnFood() {
   if (frameCount % 80 === 0) {
     var banana = createSprite(600,250,40,10);
     banana.y = random(120,200);    
-    banana.addImage(bananaImage);
+    banana.addImage(obstacle_img);
     banana.scale = 0.05;
     banana.velocityX = -5;
      //assign lifetime to the variable
@@ -115,7 +115,7 @@ function spawnObstacles() {
   if(frameCount % 300 === 0) {
     var obstacle = createSprite(800,350,10,40);
     obstacle.velocityX = -6;
-    obstacle.addImage(obstacle_img);
+    obstacle.addImage(bananaImage);
     
     //assign scale and lifetime to the obstacle     
     obstacle.scale = 0.2;
